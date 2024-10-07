@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Management</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>User Management</h1>
+      <form id="add" class="form">
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <input
+          type="email"
+          id="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter your phone"
+          maxlength="10"
+          required
+        />
+        <button type="submit">Add User</button>
+      </form>
+
+      <div class="search-container">
+        <select id="selected" class="select">
+          <option value="">Select a criterion</option>
+          <option value="name">Name</option>
+          <option value="email">Email</option>
+          <option value="phone">Phone</option>
+        </select>
+        <input type="text" id="search" placeholder="Search..." />
+      </div>
+
+      <ul id="list" class="user-list"></ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
